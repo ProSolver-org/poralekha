@@ -31,3 +31,4 @@ git remote set-url origin https://github.com/ProSolver-org/poralekha.git
 nano .git/config
 git config --list
 git push -f origin main
+git pull --rebase
