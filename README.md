@@ -32,3 +32,4 @@ nano .git/config
 git config --list
 git push -f origin main
 git pull --rebase
+git pull https://github.com/ProSolver-org/poralekha.git main
