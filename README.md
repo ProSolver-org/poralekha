@@ -303,3 +303,66 @@ ckend --recursive
 repo URL: 'next-backend' must be absolute or begin with ./|../
 roneemrayhan@Ronees-MacBook-Air  ~/RayhanWorld/RoneeMRayhan/poralekha   main ✚  git submodule add ./next-backend next-backend --recursive
 'next-backend' already exists in the index
+
+0=>
+https://codewithandrea.com/articles/flutter-project-structure/
+For reference, here's how my final project structure ended up:
+
+‣ lib
+‣ >src
+‣ >>common_widgets
+‣ >>constants
+‣ >>exceptions
+‣ >>features
+‣ >>>address
+‣ >>>authentication
+‣ >>>cart
+‣ >>>checkout
+‣ >>>orders
+‣ >>>products
+‣ >>>reviews
+‣ >>localization
+‣ >>routing
+‣ >>utils
+
+Without even looking inside folders such as common_widgets, constants, exceptions, localization, routing, and utils, we can guess that they all contain code that is truly shared across features, or needs to be centralized for a good reason (such as localization and routing).
+
+And these folders all contain relatively little code.
+
+Bonus: the test folder
+I haven't talked about this until now. But it makes a lot of sense for the test folder to follow the same project structure as the lib folder.
+
+And this is very easy to do by using the "Go to Tests" option in VSCode:
+image.png
+
+cart
+
+> application
+> data
+> domain
+> presentation
+>
+> > add_to_cart
+> > cart_total
+> > shopping_cart
+> >
+> > > shopping_cart_item_controller.dart
+> > > shopping_cart_item.dart
+> > > shopping_cart_items_builder.dart
+> > > shopping_cart_screen.dart
+
+checkout
+orders
+products
+
+VSCode option to Go to Tests from any file in the "lib" folder
+For any given file inside lib, this will create a \_test.dart file in the corresponding location inside test. 👍
+
+Conclusion
+When done right, going feature-first has many benefits over layer-first.
+
+Php artisan make:middleware cors
+
+https://www.positronx.io/how-to-use-fetch-api-to-get-data-in-react-with-rest-api/
+
+https://statusneo.com/different-ways-to-fetch-data-from-api-in-reactjs/
