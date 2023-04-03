@@ -366,3 +366,7 @@ Php artisan make:middleware cors
 https://www.positronx.io/how-to-use-fetch-api-to-get-data-in-react-with-rest-api/
 
 https://statusneo.com/different-ways-to-fetch-data-from-api-in-reactjs/
+https://bloclibrary.dev/#/flutterlogintutorial
+https://github.com/felangel/Bloc/tree/master/examples/flutter_login
+https://bloclibrary.dev/#/fluttercountertutorial
+https://github.com/felangel/Bloc/tree/master/examples/flutter_counter
